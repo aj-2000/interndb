@@ -14,21 +14,17 @@
   },
   "scripts": {
     "dev": "next dev",
-    "build": "next build && next export",
+    "build": "next build",
     "start": "next start"
   },
   "dependencies": {
     "@formkit/auto-animate": "^1.0.0-beta.3",
     "@tailwindcss/forms": "^0.5.0",
     "@tailwindcss/typography": "^0.5.2",
-    "classnames": "^2.3.2",
     "next": "^12.1.5",
-    "prop-types": "^15.8.1",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
-    "react-icons": "^4.4.0",
-    "styled-components": "^5.3.5",
-    "swiper": "^8.4.2"
+    "react-icons": "^4.4.0"
   },
   "devDependencies": {
     "@types/node": "^14.17.4",
