@@ -2,7 +2,7 @@ import React from "react";
 
 const styles = {
   container:
-    "w-[300px] h-[345px] bg-white shadow-lg pt-12 relative flex items-center flex-col gap-y-2 border-t-4 border-indigo-500/100 rounded p-4",
+    "w-[300px] h-[380px] md:h-[345px] bg-white shadow-lg pt-12 relative flex items-center flex-col gap-y-2 border-t-4 border-indigo-500/100 rounded p-4",
   name: "text-center text-lg font-medium",
   position: "text-center text-base font-normal",
   description: "text-left text-gray-500 text-sm leading-6",
