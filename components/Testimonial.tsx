@@ -2,10 +2,10 @@ import React from "react";
 
 const styles = {
   container:
-    "w-[22vw] h-[50vh] bg-white shadow-lg pt-12 relative flex items-center flex-col gap-y-4 border-t-4 border-indigo-500/100 rounded p-4",
+    "w-[300px] h-[345px] bg-white shadow-lg pt-12 relative flex items-center flex-col gap-y-2 border-t-4 border-indigo-500/100 rounded p-4",
   name: "text-center text-lg font-medium",
   position: "text-center text-base font-normal",
-  description: "text-left text-gray-500 text-sm leading-loose",
+  description: "text-left text-gray-500 text-sm leading-6",
 };
 
 const Testimonial = ({
@@ -23,7 +23,8 @@ const Testimonial = ({
             <img
               alt="profil"
               src={profileImg}
-              className="mx-auto object-cover h-16 w-16 rounded-full shadow-2xl"
+              className="mx-auto object-cover h-16 w-16 rounded-full shadow-[0_5px_5px_rgba(0,0,0,0.4)]"
+              loading="lazy"
             />
           </a>
         </div>
@@ -37,13 +38,13 @@ const Testimonial = ({
         <div>
           <img
             loading="lazy"
-            width="75px"
-            height="25px"
+            width="90px"
+            height="30px"
             src={companyLogo}
             alt="Google Logo"
           />
         </div>
-        <div className="overflow-scroll">
+        <div className="pt-2 overflow-scroll">
           <p className={styles.description}>{description}</p>
         </div>
       </div>

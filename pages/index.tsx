@@ -14,7 +14,7 @@ export default function IndexPage() {
     }
   };
   const handleRight = () => {
-    if (index === testimonials.length-3) {
+    if (index === testimonials.length-1) {
       return;
     } else {
       setIndex(index + 1);
@@ -26,8 +26,8 @@ console.log(index)
 
   return (
     <div className="flex flex-col justify-around bg-gray-100 w-[100wh] h-[100vh]">
-      <div className="flex justify-center items-center gap-x-24 px-32" ref={parent}>
-        {testimonials.slice(index,3+index).map((testimonial) => {
+      <div className="flex gap-x-8 pl-4 md:px-32 overflow-hidden" ref={parent}>
+        {testimonials.slice(index).map((testimonial) => {
           return <Testimonial key={testimonial.id} {...testimonial}/>;
         })}
       </div>
@@ -43,7 +43,7 @@ console.log(index)
         </div>
         <div
           className={`bg-white text-xl rounded-full shadow-lg p-2 ${
-            index == testimonials.length - 3
+            index == testimonials.length - 1
               ? "cursor-not-allowed text-gray-400"
               : "hover:shadow-xl hover:scale-125 text-indigo-500"
           }`}
