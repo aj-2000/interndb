@@ -51,9 +51,9 @@ export const testimonials = [
     position: "Software Engineer Intern",
     companyLogo:
       "https://upload.wikimedia.org/wikipedia/commons/4/43/Sprinklr_Brand_Logo.png",
-      roundOne: "",
-      roundTwo: "",
-      roundThree: "",
+    roundOne: "",
+    roundTwo: "",
+    roundThree: "",
     summary:
       "'pehle wale me to oops ka ek code karna.'  'objects ka array banana tha fir use custom sort.' 'alag alag members se.' 'fir usi me thode variations.' 'dsa me me ques to nahi yaad array ka hi tha cp ka tha.' 'fir doosre me os ke thode ques aur lru cache code.' 'fir dsa ka hard level.' 'vo bhi yaad nahi xD array aur multiset se tha.' 'theek hi tha vo help kar rahe the kaafi.' 'atak jao kahi pe to help kardete the.'",
   },
@@ -68,7 +68,38 @@ export const testimonials = [
     roundOne: "",
     roundTwo: "",
     roundThree: "",
-    summary: "'1 of them was ki an array is given which contains only 3 elements 0, 1 or 2 Minimum swaps required to make all 1 and 2 consecutive. For eg: 1 2 0 0 1 is arr Ans is 1.' 'Another was ki we are given 2 buses and n people And try to place each person in a bus, with given conflicting pairs.'",
+    summary:
+      "'1 of them was ki an array is given which contains only 3 elements 0, 1 or 2 Minimum swaps required to make all 1 and 2 consecutive. For eg: 1 2 0 0 1 is arr Ans is 1.' 'Another was ki we are given 2 buses and n people And try to place each person in a bus, with given conflicting pairs.'",
+  },
+
+  {
+    id: "AAA",
+    profileImg: "https://cdn.pixabay.com/photo/2016/11/18/23/38/child-1837375__340.png",
+    name: "Akshat Agrawal",
+    position: "Software Engineer Intern",
+    companyLogo:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Atlassian-logo.svg/1280px-Atlassian-logo.svg.png",
+    roundOne:
+      "story ('login api to allow only three logins in 60 secs time limit - toh 4th login na ho paae uska logic code karna tha') ->matrix + binary search + map - (leetcode medium - akshat k hisaab se) + bugs/edge cases/complexity improvement - 1hr (yhi question discuss hua pure ek ghante', 'Complete Question: Write a function to check whether the current login is valid or not. criteria: only tree logins are possible in last 60 secs (koi bhi time limit rakh lo) function isAllowed(string customer_id, int time_in_secs) { approach one: take a map<string, vector<int>> and check if current req is valid or not ACC. to the previous req. approach two(better): as time is always increasing vector is sorted - search for t-60 entry and decide whether the req. is valid or not.}",
+      roundTwo:
+      "project discussion - motive/problems/learning/improvements - 40mins : 2nd mein conflicts between team members, conflicts when someone want to add a new feature, team project - ese real life subjective question puche the.",
+       roundThree: "",
+    summary: "",
+  },
+  {
+    id: "NKC",
+    profileImg:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREEp7fZtj2xwfdVkdQSgmvTwNqSoUeIv1_keEV_xNO-A&s",
+    name: "Neeraj Kumar",
+    position: "Software Engineer Intern",
+    companyLogo:
+      "https://s3-us-west-2.amazonaws.com/cbi-image-service-prd/original/7daf82b1-14d4-473b-a9f0-5c08742ead34.png",
+    roundOne:
+      "(2-3 problems): Middle element in LL, submatrix sum, matrix multiplication - minimize memory operations - 1 Hr.",
+    roundTwo:
+      "(2 Problems): Longest Palindrominc Substring, Russian Doll - 1.5 Hr.",
+    roundThree: "Project Discussion + Cross Questioning - 30 Mins",
+    summary: "",
   },
   {
     id: "SSF",
@@ -81,7 +112,8 @@ export const testimonials = [
     roundOne: "",
     roundTwo: "",
     roundThree: "",
-    summary: "DSA Questions: Unique Paths 2(Merese), House Robber, Longest Cycle In a Graph, Peak Element, Word Break 2(Merese), Concatenated Strings(Merese), Maximum Square In a Binary Matrix, Asteriod Collision, ...",
+    summary:
+      "DSA Questions: Unique Paths 2(Merese), House Robber, Longest Cycle In a Graph, Peak Element, Word Break 2(Merese), Concatenated Strings(Merese), Maximum Square In a Binary Matrix, Asteriod Collision, ...",
   },
   {
     id: "AKS",
@@ -91,26 +123,25 @@ export const testimonials = [
     position: "Software Engineer Intern",
     companyLogo:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Salesforce.com_logo.svg/2560px-Salesforce.com_logo.svg.png",
-    roundOne:
-      "Introduction, was asked about projects, asked details about a particular Project that I explained and the tech stack. Question: Given an array of n integers and a number k, find out if we can divide it into k subarrays of equal sums. After I coded it, was asked to divide the array into subsets. Any questions you have for me?",
-    roundTwo:
-      "Introduction. Any technical challenge that you have faced. Do you know how react makes websites faster? Or efficient? What is virtual dom? How did you manage to get this cgpa? Were colleges offline or online? Question: Design a class with 2 functions, takeInput(n) and giveProduct() where takeInput can be given any number any number of times, even infinite. The other function returns the product of last k numbers. After coding, asked me to solve for any edge case I might think of. I identified it and coded for the same. He asked me what will you be doing if we had a variable k, not fixed k. Any questions you have for me?",
+    roundOne: "",
+    roundTwo: "",
     roundThree: "",
-    summary: "",
+    summary:
+      "'DSA Q1: Given a no. 'K', Take out 'K' elements from the array either from the front side or back side. Maximize the sum of 'K'  Elements.', 'DSA Q2. Maximum water that can be stored between two buildings.'",
   },
   {
     id: "SAS",
     profileImg:
-      "https://media-exp1.licdn.com/dms/image/C5603AQFbvo0dBy4jPw/profile-displayphoto-shrink_400_400/0/1589370742793?e=1669248000&v=beta&t=PBExsMWIPTCp91PFgp8dC9Rkb04xAkVudlvSeIprBlQ",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQys44b5LLCLuWVQ96syBNql4tBE5hbmhgbg&usqp=CAU",
     name: "Samad Ahmed",
     position: "Software Engineer Intern",
     companyLogo:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Salesforce.com_logo.svg/2560px-Salesforce.com_logo.svg.png",
-    roundOne:
-      "introduction+ DSA ka ek question which was on topo sort.",
+    roundOne: "introduction+ DSA ka ek question which was on topo sort.",
     roundTwo:
       "again introduction+ projects discussion and general/tech questions about that project + DSA question+ oops + basic SQL queries+ os.",
-    roundThree: "it was only a discussion round where we discussed about my projects , my experience about the first 2 rounds and typical HR questions, and ek chota sa DSA ka question pucha tha which was on doubly linked list.",
+    roundThree:
+      "it was only a discussion round where we discussed about my projects , my experience about the first 2 rounds and typical HR questions, and ek chota sa DSA ka question pucha tha which was on doubly linked list.",
     summary: "",
   },
   {
@@ -138,7 +169,8 @@ export const testimonials = [
     roundOne: "",
     roundTwo: "",
     roundThree: "",
-    summary: "'Yr DSA ke qstn toh zyada difficult nhi the', 'Simple set based qstn type the', 'Binary search types', 'Aur starting m external sorting ka qstn the', 'Thoda usne resume se pucha ki kya kya kiya hai', 'That's it'",
+    summary:
+      "'Yr DSA ke qstn toh zyada difficult nhi the', 'Simple set based qstn type the', 'Binary search types', 'Aur starting m external sorting ka qstn the', 'Thoda usne resume se pucha ki kya kya kiya hai', 'That's it'",
   },
   {
     id: "MSW",
@@ -163,10 +195,8 @@ export const testimonials = [
     position: "Software Engineer Intern",
     companyLogo:
       "https://s3-us-west-2.amazonaws.com/cbi-image-service-prd/modified/76dd8bbd-d67f-48c5-ada4-b9900c9768fb.png",
-    roundOne:
-      "(Internship + Project Discussion) 75mins + 1 ez dsa",
-    roundTwo:
-      "1 CP (only brute force bta paya) + 1 ez dsa",
+    roundOne: "(Internship + Project Discussion) 75mins + 1 ez dsa",
+    roundTwo: "1 CP (only brute force bta paya) + 1 ez dsa",
     roundThree: "1 medium bt question(path sum)",
     summary: "",
   },
