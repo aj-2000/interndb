@@ -36,14 +36,14 @@ const Testimonial = ({
           <a href="#" className="block relative">
             <img
               alt="profil"
-              src={profileImg}
+              src="https://us.123rf.com/450wm/ostill/ostill1303/ostill130300206/121727155-paris%C3%A2%E2%82%AC%E2%80%9C-october-30-one-man-dressed-and-masked-as-a-member-of-anonymous-underground-group-member-hus.jpg?ver=6"
               className="mx-auto object-cover h-16 w-16 rounded-full shadow-[0_5px_5px_rgba(0,0,0,0.4)]"
               loading="lazy"
             />
           </a>
         </div>
         <div>
-          <span className={styles.name}>{name}</span>
+          <span className={styles.name}>{'Anonymous'}</span>
         </div>
 
         <div>
