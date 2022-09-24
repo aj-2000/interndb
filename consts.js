@@ -65,12 +65,10 @@ export const testimonials = [
     position: "Software Engineer Intern",
     companyLogo:
       "https://upload.wikimedia.org/wikipedia/commons/4/43/Sprinklr_Brand_Logo.png",
-    roundOne:
-      "Introduction, was asked about projects, asked details about a particular Project that I explained and the tech stack. Question: Given an array of n integers and a number k, find out if we can divide it into k subarrays of equal sums. After I coded it, was asked to divide the array into subsets. Any questions you have for me?",
-    roundTwo:
-      "Introduction. Any technical challenge that you have faced. Do you know how react makes websites faster? Or efficient? What is virtual dom? How did you manage to get this cgpa? Were colleges offline or online? Question: Design a class with 2 functions, takeInput(n) and giveProduct() where takeInput can be given any number any number of times, even infinite. The other function returns the product of last k numbers. After coding, asked me to solve for any edge case I might think of. I identified it and coded for the same. He asked me what will you be doing if we had a variable k, not fixed k. Any questions you have for me?",
+    roundOne: "",
+    roundTwo: "",
     roundThree: "",
-    summary: "",
+    summary: "'1 of them was ki an array is given which contains only 3 elements 0, 1 or 2 Minimum swaps required to make all 1 and 2 consecutive. For eg: 1 2 0 0 1 is arr Ans is 1.' 'Another was ki we are given 2 buses and n people And try to place each person in a bus, with given conflicting pairs.'",
   },
   {
     id: "SSF",
@@ -80,12 +78,10 @@ export const testimonials = [
     position: "Software Engineer Intern",
     companyLogo:
       "https://logos-download.com/wp-content/uploads/2016/09/Flipkart_logo.png",
-    roundOne:
-      "Introduction, was asked about projects, asked details about a particular Project that I explained and the tech stack. Question: Given an array of n integers and a number k, find out if we can divide it into k subarrays of equal sums. After I coded it, was asked to divide the array into subsets. Any questions you have for me?",
-    roundTwo:
-      "Introduction. Any technical challenge that you have faced. Do you know how react makes websites faster? Or efficient? What is virtual dom? How did you manage to get this cgpa? Were colleges offline or online? Question: Design a class with 2 functions, takeInput(n) and giveProduct() where takeInput can be given any number any number of times, even infinite. The other function returns the product of last k numbers. After coding, asked me to solve for any edge case I might think of. I identified it and coded for the same. He asked me what will you be doing if we had a variable k, not fixed k. Any questions you have for me?",
+    roundOne: "",
+    roundTwo: "",
     roundThree: "",
-    summary: "",
+    summary: "DSA Questions: Unique Paths 2(Merese), House Robber, Longest Cycle In a Graph, Peak Element, Word Break 2(Merese), Concatenated Strings(Merese), Maximum Square In a Binary Matrix, Asteriod Collision, ...",
   },
   {
     id: "AKS",
@@ -103,6 +99,21 @@ export const testimonials = [
     summary: "",
   },
   {
+    id: "SAS",
+    profileImg:
+      "https://media-exp1.licdn.com/dms/image/C5603AQFbvo0dBy4jPw/profile-displayphoto-shrink_400_400/0/1589370742793?e=1669248000&v=beta&t=PBExsMWIPTCp91PFgp8dC9Rkb04xAkVudlvSeIprBlQ",
+    name: "Samad Ahmed",
+    position: "Software Engineer Intern",
+    companyLogo:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Salesforce.com_logo.svg/2560px-Salesforce.com_logo.svg.png",
+    roundOne:
+      "introduction+ DSA ka ek question which was on topo sort.",
+    roundTwo:
+      "again introduction+ projects discussion and general/tech questions about that project + DSA question+ oops + basic SQL queries+ os.",
+    roundThree: "it was only a discussion round where we discussed about my projects , my experience about the first 2 rounds and typical HR questions, and ek chota sa DSA ka question pucha tha which was on doubly linked list.",
+    summary: "",
+  },
+  {
     id: "SGV",
     profileImg:
       "https://media-exp1.licdn.com/dms/image/C4D03AQGV1Fu0-rYHiQ/profile-displayphoto-shrink_800_800/0/1654355522802?e=1669248000&v=beta&t=Ckor_y4x3jtZnGvyDz5q3j_3qjdYOD2oLPbSZwDl4R8",
@@ -111,9 +122,8 @@ export const testimonials = [
     companyLogo:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Visa_Inc._logo.svg/2560px-Visa_Inc._logo.svg.png",
     roundOne:
-      "Introduction, was asked about projects, asked details about a particular Project that I explained and the tech stack. Question: Given an array of n integers and a number k, find out if we can divide it into k subarrays of equal sums. After I coded it, was asked to divide the array into subsets. Any questions you have for me?",
-    roundTwo:
-      "Introduction. Any technical challenge that you have faced. Do you know how react makes websites faster? Or efficient? What is virtual dom? How did you manage to get this cgpa? Were colleges offline or online? Question: Design a class with 2 functions, takeInput(n) and giveProduct() where takeInput can be given any number any number of times, even infinite. The other function returns the product of last k numbers. After coding, asked me to solve for any edge case I might think of. I identified it and coded for the same. He asked me what will you be doing if we had a variable k, not fixed k. Any questions you have for me?",
+      "'pehle intro lia', 'projects puche', 'fir detail puchi uski', 'fir pucha ki kitna data retreive krre ho size main', 'fir 30min talk chali ki data kaise kab transfer krna', 'vo puchre terrabytes mai toh kya kre', 'users kaise access kre', 'dbms in general', '1 question se dusra question', 'fir 1 coding question notepad pr', 'implementation based tha ez sa', 'fir mere baare mai pucha kaafi tym tk', 'pi hle saal kya kya accomplish kaise kaise kra', 'overall', 'aur koi challenge jo overcome kra', 'personal puchne ke baad khatam'",
+    roundTwo: "",
     roundThree: "",
     summary: "",
   },
@@ -125,12 +135,10 @@ export const testimonials = [
     position: "Software Engineer Intern",
     companyLogo:
       "https://d3g4wmezrjkwkg.cloudfront.net/website/images/logo-gold.png",
-    roundOne:
-      "Introduction, was asked about projects, asked details about a particular Project that I explained and the tech stack. Question: Given an array of n integers and a number k, find out if we can divide it into k subarrays of equal sums. After I coded it, was asked to divide the array into subsets. Any questions you have for me?",
-    roundTwo:
-      "Introduction. Any technical challenge that you have faced. Do you know how react makes websites faster? Or efficient? What is virtual dom? How did you manage to get this cgpa? Were colleges offline or online? Question: Design a class with 2 functions, takeInput(n) and giveProduct() where takeInput can be given any number any number of times, even infinite. The other function returns the product of last k numbers. After coding, asked me to solve for any edge case I might think of. I identified it and coded for the same. He asked me what will you be doing if we had a variable k, not fixed k. Any questions you have for me?",
+    roundOne: "",
+    roundTwo: "",
     roundThree: "",
-    summary: "",
+    summary: "'Yr DSA ke qstn toh zyada difficult nhi the', 'Simple set based qstn type the', 'Binary search types', 'Aur starting m external sorting ka qstn the', 'Thoda usne resume se pucha ki kya kya kiya hai', 'That's it'",
   },
   {
     id: "MSW",
@@ -141,9 +149,9 @@ export const testimonials = [
     companyLogo:
       "https://d3g4wmezrjkwkg.cloudfront.net/website/images/logo-gold.png",
     roundOne:
-      "Introduction, was asked about projects, asked details about a particular Project that I explained and the tech stack. Question: Given an array of n integers and a number k, find out if we can divide it into k subarrays of equal sums. After I coded it, was asked to divide the array into subsets. Any questions you have for me?",
+      "PREORDER INORDER of BST, BT using recursion (only discussion) then iterative tree traversals (Morris Traversal) poocha and code it on pen and paper.",
     roundTwo:
-      "Introduction. Any technical challenge that you have faced. Do you know how react makes websites faster? Or efficient? What is virtual dom? How did you manage to get this cgpa? Were colleges offline or online? Question: Design a class with 2 functions, takeInput(n) and giveProduct() where takeInput can be given any number any number of times, even infinite. The other function returns the product of last k numbers. After coding, asked me to solve for any edge case I might think of. I identified it and coded for the same. He asked me what will you be doing if we had a variable k, not fixed k. Any questions you have for me?",
+      "CV discussion House Robber 1,2,3 + N-ary tree mei house robber + code",
     roundThree: "",
     summary: "",
   },
@@ -156,10 +164,10 @@ export const testimonials = [
     companyLogo:
       "https://s3-us-west-2.amazonaws.com/cbi-image-service-prd/modified/76dd8bbd-d67f-48c5-ada4-b9900c9768fb.png",
     roundOne:
-      "Introduction, was asked about projects, asked details about a particular Project that I explained and the tech stack. Question: Given an array of n integers and a number k, find out if we can divide it into k subarrays of equal sums. After I coded it, was asked to divide the array into subsets. Any questions you have for me?",
+      "(Internship + Project Discussion) 75mins + 1 ez dsa",
     roundTwo:
-      "Introduction. Any technical challenge that you have faced. Do you know how react makes websites faster? Or efficient? What is virtual dom? How did you manage to get this cgpa? Were colleges offline or online? Question: Design a class with 2 functions, takeInput(n) and giveProduct() where takeInput can be given any number any number of times, even infinite. The other function returns the product of last k numbers. After coding, asked me to solve for any edge case I might think of. I identified it and coded for the same. He asked me what will you be doing if we had a variable k, not fixed k. Any questions you have for me?",
-    roundThree: "",
+      "1 CP (only brute force bta paya) + 1 ez dsa",
+    roundThree: "1 medium bt question(path sum)",
     summary: "",
   },
   {
@@ -171,9 +179,9 @@ export const testimonials = [
     companyLogo:
       "https://s3-us-west-2.amazonaws.com/cbi-image-service-prd/modified/76dd8bbd-d67f-48c5-ada4-b9900c9768fb.png",
     roundOne:
-      "Introduction, was asked about projects, asked details about a particular Project that I explained and the tech stack. Question: Given an array of n integers and a number k, find out if we can divide it into k subarrays of equal sums. After I coded it, was asked to divide the array into subsets. Any questions you have for me?",
+      "Mujhse 1st round me 2 question puche the. 1st was directly from codeforces, interviewer ne mujhe codeforces pe khol kar hi dikhaya tha that this is the question. Question was this 'B. CopyCopyCopyCopyCopy' - 2nd question was that ki you're given a binary matrix, you have to tell the number of squares that contain all ones",
     roundTwo:
-      "Introduction. Any technical challenge that you have faced. Do you know how react makes websites faster? Or efficient? What is virtual dom? How did you manage to get this cgpa? Were colleges offline or online? Question: Design a class with 2 functions, takeInput(n) and giveProduct() where takeInput can be given any number any number of times, even infinite. The other function returns the product of last k numbers. After coding, asked me to solve for any edge case I might think of. I identified it and coded for the same. He asked me what will you be doing if we had a variable k, not fixed k. Any questions you have for me?",
+      "'2nd round me I was asked 3 questions. First was to design a high level load balancer, jisme you are given some servers initially and you have to optimally allot requests to servers. Servers may die due to fault and the dead server may come back too, and the new servers can be added too.', '2nd was ki jab Google maps use karte hain hum, toh jab hum given path se direction change karte hain then the app re-routes the path. Toh iska kya ho sakta hai algorithm.', '3rd tha money borrowing problem. There are some people aur len den hona hai paise ka. Toh you have to tell ki minimum operations me how will you achieve this', '2nd round ke last me I was asked one hr question ki you're rrally stuck while doing a project, how will you approach to this situation'",
     roundThree: "",
     summary: "",
   },
