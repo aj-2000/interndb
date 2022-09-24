@@ -1,5 +1,15 @@
 import React from "react";
+import Description from "./Description";
 
+interface TestimonialComponentInterface {
+  name: string;
+  profileImg: string;
+  position: string;
+  companyLogo: string;
+  roundOne: string;
+  roundTwo: string;
+  roundThree: string;
+}
 const styles = {
   container:
     "w-[300px] h-[380px] md:h-[345px] bg-white shadow-lg pt-12 relative flex items-center flex-col gap-y-2 border-t-4 border-indigo-500/100 rounded p-4",
@@ -13,8 +23,10 @@ const Testimonial = ({
   profileImg,
   position,
   companyLogo,
-  description,
-}: any) => {
+  roundOne,
+  roundTwo,
+  roundThree,
+}: TestimonialComponentInterface) => {
   return (
     <div className="mt-24">
       <div className={styles.container}>
@@ -35,17 +47,18 @@ const Testimonial = ({
         <div>
           <span className={styles.position}>{position}</span>
         </div>
-        <div>
+        <div className="h-[100px]">
           <img
             loading="lazy"
-            width="90px"
-            height="30px"
+            width="120px"
+            height="40px"
             src={companyLogo}
             alt="Google Logo"
           />
         </div>
         <div className="pt-2 overflow-scroll">
-          <p className={styles.description}>{description}</p>
+          {/* <p className={styles.description}>{description}</p> */}
+          <Description {...{ roundOne, roundTwo, roundThree }} />
         </div>
       </div>
     </div>

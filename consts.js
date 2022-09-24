@@ -1,141 +1,171 @@
 export const testimonials = [
   {
-    id: 1,
+    id: "PTG",
     profileImg:
-      "https://assets.algoexpert.io/spas/main/prod/g24c1fdc096-prod/dist/images/1b9a05eb524cd1db08c6.jpg",
-    name: "Alex",
-    position: "Software Engineer",
+      "https://media-exp1.licdn.com/dms/image/C4E03AQEiGNTL-T5vMg/profile-displayphoto-shrink_800_800/0/1641993959118?e=1669248000&v=beta&t=VPD4w724mWtA9EKVnIlhKMiaQ2LNfRVbJd7167d1RXs",
+    name: "Pratyush Gupta",
+    position: "Software Engineer Intern",
     companyLogo:
       "https://assets.algoexpert.io/spas/main/prod/g24c1fdc096-prod/dist/images/a2b3c3709ffedce2a22a.png",
-    description:
-      "AlgoExpert was the backbone of my technical coding interview preparation. It allows you to efficiently work through the most common variations of problems asked by top-tier companies without having to spend hours 'battling' an algorithm only to come up with an inefficient or incorrect solution. There are a lot of resources available for repetition, but AlgoExpert differentiates its product by providing the 'how' and 'why' in clear and concise videos. Developing a deeper understanding of how to approach these problems is better than trying to memorize lines of code. I highly recommend AlgoExpert.",
+    description: "",
+    roundOne:
+      "Introduction, was asked about projects, asked details about a particular Project that I explained and the tech stack. Question: Given an array of n integers and a number k, find out if we can divide it into k subarrays of equal sums. After I coded it, was asked to divide the array into subsets. Any questions you have for me?",
+    roundTwo:
+      "Introduction. Any technical challenge that you have faced. Do you know how react makes websites faster? Or efficient? What is virtual dom? How did you manage to get this cgpa? Were colleges offline or online? Question: Design a class with 2 functions, takeInput(n) and giveProduct() where takeInput can be given any number any number of times, even infinite. The other function returns the product of last k numbers. After coding, asked me to solve for any edge case I might think of. I identified it and coded for the same. He asked me what will you be doing if we had a variable k, not fixed k. Any questions you have for me?",
+    roundThree: "",
   },
   {
-    id: 2,
+    id: "KBM",
     profileImg:
-      "https://assets.algoexpert.io/spas/main/prod/g24c1fdc096-prod/dist/images/6592e47c701c3ba79dbb.jpg",
-    name: "Corbin",
-    position: "Software Developer",
-    companyLogo:
-      "https://assets.algoexpert.io/spas/main/prod/g24c1fdc096-prod/dist/images/6591cdc0702b32310306.png",
-    description:
-      "AlgoExpert was the backbone of my technical coding interview preparation. It allows you to efficiently work through the most common variations of problems asked by top-tier companies without having to spend hours 'battling' an algorithm only to come up with an inefficient or incorrect solution. There are a lot of resources available for repetition, but AlgoExpert differentiates its product by providing the 'how' and 'why' in clear and concise videos. Developing a deeper understanding of how to approach these problems is better than trying to memorize lines of code. I highly recommend AlgoExpert.",
-  },
-  {
-    id: 3,
-    profileImg:
-      "https://assets.algoexpert.io/spas/main/prod/g24c1fdc096-prod/dist/images/7072c78919931af052cc.jpg",
-    name: "Carlos",
-    position: "Software Developer Intern",
+      "https://media-exp1.licdn.com/dms/image/C4D03AQE9ojAB0ygWlg/profile-displayphoto-shrink_400_400/0/1662952990286?e=1669248000&v=beta&t=dSb0yt3_HcPMxfGzwHoTO3DXobz9wUugiZCq1E_MHmg",
+    name: "Kartik Bagri",
+    position: "Software Engineer Intern",
     companyLogo:
       "https://assets.algoexpert.io/spas/main/prod/g24c1fdc096-prod/dist/images/b2bd91d7b87b2181ca45.png",
-    description:
-      "As a scientist who was looking to break into Tech, I knew the underlying logic of programming, but I had a lot of gaps in my understanding, especially on the types of algorithms questions asked at interviews. I can confidently say that AlgoExpert is one of the best resources out there for interview preparation, with fantastic video tutorials and an excellent question selection that allows you to get a deep understanding of the topics and confidence in your problem solving ability. The site is incredibly intuitive to use and I think that the staff are some of the best out there, being incredibly supportive and passionate about offering a great customer experience. I cannot recommend AlgoExpert highly enough.",
+    roundOne:
+      "Introduction, was asked about projects, asked details about a particular Project that I explained and the tech stack. Question: Given an array of n integers and a number k, find out if we can divide it into k subarrays of equal sums. After I coded it, was asked to divide the array into subsets. Any questions you have for me?",
+    roundTwo:
+      "Introduction. Any technical challenge that you have faced. Do you know how react makes websites faster? Or efficient? What is virtual dom? How did you manage to get this cgpa? Were colleges offline or online? Question: Design a class with 2 functions, takeInput(n) and giveProduct() where takeInput can be given any number any number of times, even infinite. The other function returns the product of last k numbers. After coding, asked me to solve for any edge case I might think of. I identified it and coded for the same. He asked me what will you be doing if we had a variable k, not fixed k. Any questions you have for me?",
+    roundThree: "",
   },
   {
-    id: 4,
+    id: "SST",
     profileImg:
-      "https://assets.algoexpert.io/spas/main/prod/g24c1fdc096-prod/dist/images/a0ae92ef8d06f76c2ab9.jpg",
-    name: "Marlies",
-    position: "Software Engineer",
+      "https://pps.whatsapp.net/v/t61.24694-24/306090213_630502608414260_2841247183587971420_n.jpg?ccb=11-4&oh=01_AVxbEFV6Ab_WXwHGKxlzBoEr3-P-pK96yM3xDmtEvkXB7Q&oe=633E166C",
+    name: "Snehit Shah",
+    position: "Software Engineer Intern",
     companyLogo:
-      "https://assets.algoexpert.io/spas/main/prod/g24c1fdc096-prod/dist/images/535955e7fb592d888cc5.png",
-
-    description:
-      "I'm just writing to thank you for this product. I had failed in so many interviews before, but I wanted to get into a top tech company so much that I even enrolled in a Master's program. Even then, I was unsure if I had what it takes to make it. From the moment I heard your first video explanation, I thought 'this is exactly the way to solve an interview question' (plus the extra points you can grab by asking clarifying questions). After a few months of studying, mainly on AlgoExpert, I got offers to intern at Microsoft and Google!",
+      "https://images.squarespace-cdn.com/content/v1/593970f06b8f5b550f1dbc59/1496948776295-W5T8X3EJ0UVEX3C8KIYX/Tower+U.S.+Logo_Cropped+%28P%29.png",
+    roundOne:
+      "Introduction, was asked about projects, asked details about a particular Project that I explained and the tech stack. Question: Given an array of n integers and a number k, find out if we can divide it into k subarrays of equal sums. After I coded it, was asked to divide the array into subsets. Any questions you have for me?",
+    roundTwo:
+      "Introduction. Any technical challenge that you have faced. Do you know how react makes websites faster? Or efficient? What is virtual dom? How did you manage to get this cgpa? Were colleges offline or online? Question: Design a class with 2 functions, takeInput(n) and giveProduct() where takeInput can be given any number any number of times, even infinite. The other function returns the product of last k numbers. After coding, asked me to solve for any edge case I might think of. I identified it and coded for the same. He asked me what will you be doing if we had a variable k, not fixed k. Any questions you have for me?",
+    roundThree: "",
   },
   {
-    id: 5,
+    id: "NDS",
     profileImg:
-      "https://assets.algoexpert.io/spas/main/prod/g24c1fdc096-prod/dist/images/e64dc64b640a5660031f.jpg",
-    name: "Adarsh",
-    position: "Software Engineer",
+      "https://media-exp1.licdn.com/dms/image/C4D03AQFnceF1H5Swsw/profile-displayphoto-shrink_800_800/0/1657387601218?e=1669248000&v=beta&t=z8-9_tPbBIXtsAbjqQ9shYPEFK3oRTq2pCw_5yrcv8I",
+    name: "Naman Dhingra",
+    position: "Software Engineer Intern",
     companyLogo:
-      "https://assets.algoexpert.io/spas/main/prod/g24c1fdc096-prod/dist/images/f16a65e0bb8afbc03b4d.png",
-
-    description:
-      "I just accepted an offer with Palantir, and also received an offer from Amazon and a handful of startups. AlgoExpert does a great job selecting problems- many of my interview questions were variants of problems on the website. And when I came across problems I hadn't seen before, AlgoExpert gave me the tools to select the right data structures and identify patterns. Thanks AlgoExpert!",
+      "https://upload.wikimedia.org/wikipedia/commons/4/43/Sprinklr_Brand_Logo.png",
+    roundOne:
+      "Introduction, was asked about projects, asked details about a particular Project that I explained and the tech stack. Question: Given an array of n integers and a number k, find out if we can divide it into k subarrays of equal sums. After I coded it, was asked to divide the array into subsets. Any questions you have for me?",
+    roundTwo:
+      "Introduction. Any technical challenge that you have faced. Do you know how react makes websites faster? Or efficient? What is virtual dom? How did you manage to get this cgpa? Were colleges offline or online? Question: Design a class with 2 functions, takeInput(n) and giveProduct() where takeInput can be given any number any number of times, even infinite. The other function returns the product of last k numbers. After coding, asked me to solve for any edge case I might think of. I identified it and coded for the same. He asked me what will you be doing if we had a variable k, not fixed k. Any questions you have for me?",
+    roundThree: "",
   },
   {
-    id: 6,
+    id: "SBS",
     profileImg:
-      "https://assets.algoexpert.io/spas/main/prod/g24c1fdc096-prod/dist/images/bc23db5c75890195ea7a.jpg",
-    name: "Elana",
-    position: "Senior Software Engineer",
+      "https://media-exp1.licdn.com/dms/image/C4D03AQGm6tnXkL-rzg/profile-displayphoto-shrink_800_800/0/1656496771984?e=1669248000&v=beta&t=QEWO2zL0l-bcknTXKDwpQ_5OtQiQZe6CPSki6ggko7w",
+    name: "Shubham Bhola",
+    position: "Software Engineer Intern",
     companyLogo:
-      "https://assets.algoexpert.io/spas/main/prod/g24c1fdc096-prod/dist/images/3b7d9f4b073deb6a9b74.png",
-
-    description:
-      "I just got a job offer from Oracle and most of the questions they asked, I had practiced on AlgoExpert. Even when they asked questions I was not familiar with, I was able to break down the problem and write code which I learned from the explanations section on AlgoExpert. Being a Computer Science Engineering student, I had fundamental knowledge in Data Structures & Algorithms, but I didn't know how to approach, break down and apply this knowledge to solve problems. Also since all the problems are classified into categories, I was able to easily identify my weak points and work on those. Extremely grateful to AlgoExpert !",
+      "https://upload.wikimedia.org/wikipedia/commons/4/43/Sprinklr_Brand_Logo.png",
+    roundOne:
+      "Introduction, was asked about projects, asked details about a particular Project that I explained and the tech stack. Question: Given an array of n integers and a number k, find out if we can divide it into k subarrays of equal sums. After I coded it, was asked to divide the array into subsets. Any questions you have for me?",
+    roundTwo:
+      "Introduction. Any technical challenge that you have faced. Do you know how react makes websites faster? Or efficient? What is virtual dom? How did you manage to get this cgpa? Were colleges offline or online? Question: Design a class with 2 functions, takeInput(n) and giveProduct() where takeInput can be given any number any number of times, even infinite. The other function returns the product of last k numbers. After coding, asked me to solve for any edge case I might think of. I identified it and coded for the same. He asked me what will you be doing if we had a variable k, not fixed k. Any questions you have for me?",
+    roundThree: "",
   },
   {
-    id: 7,
+    id: "SSF",
     profileImg:
-      "https://assets.algoexpert.io/spas/main/prod/g24c1fdc096-prod/dist/images/1b9a05eb524cd1db08c6.jpg",
-    name: "Alex",
-    position: "Software Engineer",
+      "https://media-exp1.licdn.com/dms/image/C4D03AQHucTPJ_WmypQ/profile-displayphoto-shrink_800_800/0/1659730180031?e=1669248000&v=beta&t=3NWA1Vmq6Yst9hD0f-GDTNhREilXsFs6srkdLerdXx0",
+    name: "Shivam Singla",
+    position: "Software Engineer Intern",
     companyLogo:
-      "https://assets.algoexpert.io/spas/main/prod/g24c1fdc096-prod/dist/images/a2b3c3709ffedce2a22a.png",
-    description:
-      "AlgoExpert was the backbone of my technical coding interview preparation. It allows you to efficiently work through the most common variations of problems asked by top-tier companies without having to spend hours 'battling' an algorithm only to come up with an inefficient or incorrect solution. There are a lot of resources available for repetition, but AlgoExpert differentiates its product by providing the 'how' and 'why' in clear and concise videos. Developing a deeper understanding of how to approach these problems is better than trying to memorize lines of code. I highly recommend AlgoExpert.",
+      "https://logos-download.com/wp-content/uploads/2016/09/Flipkart_logo.png",
+    roundOne:
+      "Introduction, was asked about projects, asked details about a particular Project that I explained and the tech stack. Question: Given an array of n integers and a number k, find out if we can divide it into k subarrays of equal sums. After I coded it, was asked to divide the array into subsets. Any questions you have for me?",
+    roundTwo:
+      "Introduction. Any technical challenge that you have faced. Do you know how react makes websites faster? Or efficient? What is virtual dom? How did you manage to get this cgpa? Were colleges offline or online? Question: Design a class with 2 functions, takeInput(n) and giveProduct() where takeInput can be given any number any number of times, even infinite. The other function returns the product of last k numbers. After coding, asked me to solve for any edge case I might think of. I identified it and coded for the same. He asked me what will you be doing if we had a variable k, not fixed k. Any questions you have for me?",
+    roundThree: "",
   },
   {
-    id: 8,
+    id: "AKS",
     profileImg:
-      "https://assets.algoexpert.io/spas/main/prod/g24c1fdc096-prod/dist/images/6592e47c701c3ba79dbb.jpg",
-    name: "Corbin",
-    position: "Software Developer",
+      "https://media-exp1.licdn.com/dms/image/C4D03AQE4WuFa75-rRA/profile-displayphoto-shrink_800_800/0/1663130804807?e=1669248000&v=beta&t=ZgTy7c05nsF29CUOOviA3bZABWWnMpRcXk3vZQic44I",
+    name: "Ankush Kumar",
+    position: "Software Engineer Intern",
     companyLogo:
-      "https://assets.algoexpert.io/spas/main/prod/g24c1fdc096-prod/dist/images/6591cdc0702b32310306.png",
-    description:
-      "AlgoExpert was the backbone of my technical coding interview preparation. It allows you to efficiently work through the most common variations of problems asked by top-tier companies without having to spend hours 'battling' an algorithm only to come up with an inefficient or incorrect solution. There are a lot of resources available for repetition, but AlgoExpert differentiates its product by providing the 'how' and 'why' in clear and concise videos. Developing a deeper understanding of how to approach these problems is better than trying to memorize lines of code. I highly recommend AlgoExpert.",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Salesforce.com_logo.svg/2560px-Salesforce.com_logo.svg.png",
+    roundOne:
+      "Introduction, was asked about projects, asked details about a particular Project that I explained and the tech stack. Question: Given an array of n integers and a number k, find out if we can divide it into k subarrays of equal sums. After I coded it, was asked to divide the array into subsets. Any questions you have for me?",
+    roundTwo:
+      "Introduction. Any technical challenge that you have faced. Do you know how react makes websites faster? Or efficient? What is virtual dom? How did you manage to get this cgpa? Were colleges offline or online? Question: Design a class with 2 functions, takeInput(n) and giveProduct() where takeInput can be given any number any number of times, even infinite. The other function returns the product of last k numbers. After coding, asked me to solve for any edge case I might think of. I identified it and coded for the same. He asked me what will you be doing if we had a variable k, not fixed k. Any questions you have for me?",
+    roundThree: "",
   },
   {
-    id: 9,
+    id: "SGV",
     profileImg:
-      "https://assets.algoexpert.io/spas/main/prod/g24c1fdc096-prod/dist/images/7072c78919931af052cc.jpg",
-    name: "Carlos",
-    position: "Software Developer Intern",
+      "https://media-exp1.licdn.com/dms/image/C4D03AQGV1Fu0-rYHiQ/profile-displayphoto-shrink_800_800/0/1654355522802?e=1669248000&v=beta&t=Ckor_y4x3jtZnGvyDz5q3j_3qjdYOD2oLPbSZwDl4R8",
+    name: "Swasti Guatumn",
+    position: "Software Engineer Intern",
     companyLogo:
-      "https://assets.algoexpert.io/spas/main/prod/g24c1fdc096-prod/dist/images/b2bd91d7b87b2181ca45.png",
-    description:
-      "As a scientist who was looking to break into Tech, I knew the underlying logic of programming, but I had a lot of gaps in my understanding, especially on the types of algorithms questions asked at interviews. I can confidently say that AlgoExpert is one of the best resources out there for interview preparation, with fantastic video tutorials and an excellent question selection that allows you to get a deep understanding of the topics and confidence in your problem solving ability. The site is incredibly intuitive to use and I think that the staff are some of the best out there, being incredibly supportive and passionate about offering a great customer experience. I cannot recommend AlgoExpert highly enough.",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Visa_Inc._logo.svg/2560px-Visa_Inc._logo.svg.png",
+    roundOne:
+      "Introduction, was asked about projects, asked details about a particular Project that I explained and the tech stack. Question: Given an array of n integers and a number k, find out if we can divide it into k subarrays of equal sums. After I coded it, was asked to divide the array into subsets. Any questions you have for me?",
+    roundTwo:
+      "Introduction. Any technical challenge that you have faced. Do you know how react makes websites faster? Or efficient? What is virtual dom? How did you manage to get this cgpa? Were colleges offline or online? Question: Design a class with 2 functions, takeInput(n) and giveProduct() where takeInput can be given any number any number of times, even infinite. The other function returns the product of last k numbers. After coding, asked me to solve for any edge case I might think of. I identified it and coded for the same. He asked me what will you be doing if we had a variable k, not fixed k. Any questions you have for me?",
+    roundThree: "",
   },
   {
-    id: 10,
+    id: "MGW",
     profileImg:
-      "https://assets.algoexpert.io/spas/main/prod/g24c1fdc096-prod/dist/images/a0ae92ef8d06f76c2ab9.jpg",
-    name: "Marlies",
-    position: "Software Engineer",
+      "https://media-exp1.licdn.com/dms/image/C5603AQFkiOLlmQdaDQ/profile-displayphoto-shrink_800_800/0/1617956653488?e=1669248000&v=beta&t=NkFRu5RaOAXvElUICX8GlK2ykGp1_xMYnV9AL8NGDbk",
+    name: "Mukul gupta",
+    position: "Software Engineer Intern",
     companyLogo:
-      "https://assets.algoexpert.io/spas/main/prod/g24c1fdc096-prod/dist/images/535955e7fb592d888cc5.png",
-
-    description:
-      "I'm just writing to thank you for this product. I had failed in so many interviews before, but I wanted to get into a top tech company so much that I even enrolled in a Master's program. Even then, I was unsure if I had what it takes to make it. From the moment I heard your first video explanation, I thought 'this is exactly the way to solve an interview question' (plus the extra points you can grab by asking clarifying questions). After a few months of studying, mainly on AlgoExpert, I got offers to intern at Microsoft and Google!",
+      "https://d3g4wmezrjkwkg.cloudfront.net/website/images/logo-gold.png",
+    roundOne:
+      "Introduction, was asked about projects, asked details about a particular Project that I explained and the tech stack. Question: Given an array of n integers and a number k, find out if we can divide it into k subarrays of equal sums. After I coded it, was asked to divide the array into subsets. Any questions you have for me?",
+    roundTwo:
+      "Introduction. Any technical challenge that you have faced. Do you know how react makes websites faster? Or efficient? What is virtual dom? How did you manage to get this cgpa? Were colleges offline or online? Question: Design a class with 2 functions, takeInput(n) and giveProduct() where takeInput can be given any number any number of times, even infinite. The other function returns the product of last k numbers. After coding, asked me to solve for any edge case I might think of. I identified it and coded for the same. He asked me what will you be doing if we had a variable k, not fixed k. Any questions you have for me?",
+    roundThree: "",
   },
   {
-    id: 11,
+    id: "MSW",
     profileImg:
-      "https://assets.algoexpert.io/spas/main/prod/g24c1fdc096-prod/dist/images/e64dc64b640a5660031f.jpg",
-    name: "Adarsh",
-    position: "Software Engineer",
+      "https://media-exp1.licdn.com/dms/image/C4D03AQH3qwo9_Av5IQ/profile-displayphoto-shrink_400_400/0/1643552917310?e=1669248000&v=beta&t=4HayAmQ_u54mFax8O1VvS3K-iqkLa5VWWEKkawje_fM",
+    name: "Manan Suri",
+    position: "Software Engineer Intern",
     companyLogo:
-      "https://assets.algoexpert.io/spas/main/prod/g24c1fdc096-prod/dist/images/f16a65e0bb8afbc03b4d.png",
-
-    description:
-      "I just accepted an offer with Palantir, and also received an offer from Amazon and a handful of startups. AlgoExpert does a great job selecting problems- many of my interview questions were variants of problems on the website. And when I came across problems I hadn't seen before, AlgoExpert gave me the tools to select the right data structures and identify patterns. Thanks AlgoExpert!",
+      "https://d3g4wmezrjkwkg.cloudfront.net/website/images/logo-gold.png",
+    roundOne:
+      "Introduction, was asked about projects, asked details about a particular Project that I explained and the tech stack. Question: Given an array of n integers and a number k, find out if we can divide it into k subarrays of equal sums. After I coded it, was asked to divide the array into subsets. Any questions you have for me?",
+    roundTwo:
+      "Introduction. Any technical challenge that you have faced. Do you know how react makes websites faster? Or efficient? What is virtual dom? How did you manage to get this cgpa? Were colleges offline or online? Question: Design a class with 2 functions, takeInput(n) and giveProduct() where takeInput can be given any number any number of times, even infinite. The other function returns the product of last k numbers. After coding, asked me to solve for any edge case I might think of. I identified it and coded for the same. He asked me what will you be doing if we had a variable k, not fixed k. Any questions you have for me?",
+    roundThree: "",
   },
   {
-    id: 12,
+    id: "YGM",
     profileImg:
-      "https://assets.algoexpert.io/spas/main/prod/g24c1fdc096-prod/dist/images/bc23db5c75890195ea7a.jpg",
-    name: "Elana",
-    position: "Senior Software Engineer",
+      "https://media-exp1.licdn.com/dms/image/C5603AQFdhfBr1XKtwg/profile-displayphoto-shrink_800_800/0/1658992139199?e=1669248000&v=beta&t=NpFzT1hhPoIpx-sopcE3XGQe7WKKhIQxYD0dA7roJhk",
+    name: "Yash Gaur",
+    position: "Software Engineer Intern",
     companyLogo:
-      "https://assets.algoexpert.io/spas/main/prod/g24c1fdc096-prod/dist/images/3b7d9f4b073deb6a9b74.png",
-
-    description:
-      "I just got a job offer from Oracle and most of the questions they asked, I had practiced on AlgoExpert. Even when they asked questions I was not familiar with, I was able to break down the problem and write code which I learned from the explanations section on AlgoExpert. Being a Computer Science Engineering student, I had fundamental knowledge in Data Structures & Algorithms, but I didn't know how to approach, break down and apply this knowledge to solve problems. Also since all the problems are classified into categories, I was able to easily identify my weak points and work on those. Extremely grateful to AlgoExpert !",
+      "https://s3-us-west-2.amazonaws.com/cbi-image-service-prd/modified/76dd8bbd-d67f-48c5-ada4-b9900c9768fb.png",
+    roundOne:
+      "Introduction, was asked about projects, asked details about a particular Project that I explained and the tech stack. Question: Given an array of n integers and a number k, find out if we can divide it into k subarrays of equal sums. After I coded it, was asked to divide the array into subsets. Any questions you have for me?",
+    roundTwo:
+      "Introduction. Any technical challenge that you have faced. Do you know how react makes websites faster? Or efficient? What is virtual dom? How did you manage to get this cgpa? Were colleges offline or online? Question: Design a class with 2 functions, takeInput(n) and giveProduct() where takeInput can be given any number any number of times, even infinite. The other function returns the product of last k numbers. After coding, asked me to solve for any edge case I might think of. I identified it and coded for the same. He asked me what will you be doing if we had a variable k, not fixed k. Any questions you have for me?",
+    roundThree: "",
   },
-
+  {
+    id: "ACM",
+    profileImg:
+      "https://media-exp1.licdn.com/dms/image/C4D03AQHAECySeMCsHQ/profile-displayphoto-shrink_800_800/0/1660110056597?e=1669248000&v=beta&t=Shhvf_DdFy6f9J_ZvbFkN0v2h1YFn5dR3PPU3jNzqQY",
+    name: "Ankit Chopra",
+    position: "Software Engineer Intern",
+    companyLogo:
+      "https://s3-us-west-2.amazonaws.com/cbi-image-service-prd/modified/76dd8bbd-d67f-48c5-ada4-b9900c9768fb.png",
+    roundOne:
+      "Introduction, was asked about projects, asked details about a particular Project that I explained and the tech stack. Question: Given an array of n integers and a number k, find out if we can divide it into k subarrays of equal sums. After I coded it, was asked to divide the array into subsets. Any questions you have for me?",
+    roundTwo:
+      "Introduction. Any technical challenge that you have faced. Do you know how react makes websites faster? Or efficient? What is virtual dom? How did you manage to get this cgpa? Were colleges offline or online? Question: Design a class with 2 functions, takeInput(n) and giveProduct() where takeInput can be given any number any number of times, even infinite. The other function returns the product of last k numbers. After coding, asked me to solve for any edge case I might think of. I identified it and coded for the same. He asked me what will you be doing if we had a variable k, not fixed k. Any questions you have for me?",
+    roundThree: "",
+  },
 ];
