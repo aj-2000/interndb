@@ -32,7 +32,7 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx"
-, "components/CompanyFilter.jsx"  ],
+, "components/CompanySelect.jsx"  ],
   "exclude": [
     "node_modules"
   ]

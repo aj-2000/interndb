@@ -1,4 +1,5 @@
 import React from "react";
+import parse from "html-react-parser";
 
 const Description = ({ roundOne, roundTwo, roundThree, summary }: any) => {
   return (
@@ -8,14 +9,14 @@ const Description = ({ roundOne, roundTwo, roundThree, summary }: any) => {
           <span className="italic font-mono font-thin text-base">
             SUMMARY :
           </span>
-          <p className="text-left text-gray-500 text-sm leading-6">{summary}</p>
+          <p className="text-left text-gray-500 text-sm leading-6">{parse(summary)}</p>
         </div>
       )}
       {roundOne !== "" && (
         <div>
           <span className="italic font-mono font-thin text-base">ROUND 1:</span>
           <p className="text-left text-gray-500 text-sm leading-6">
-            {roundOne}
+          {parse(roundOne)}
           </p>
         </div>
       )}
@@ -23,7 +24,7 @@ const Description = ({ roundOne, roundTwo, roundThree, summary }: any) => {
         <div>
           <span className="italic font-mono font-thin text-base">ROUND 2:</span>
           <p className="text-left text-gray-500 text-sm leading-6">
-            {roundTwo}
+          {parse(roundTwo)}
           </p>
         </div>
       )}
@@ -31,7 +32,7 @@ const Description = ({ roundOne, roundTwo, roundThree, summary }: any) => {
         <div>
           <span className="italic font-mono font-thin text-base">ROUND 3:</span>
           <p className="text-left text-gray-500 text-sm leading-6">
-            {roundThree}
+          {parse(roundThree)}
           </p>
         </div>
       )}
