@@ -9,6 +9,7 @@ interface TestimonialComponentInterface {
   roundOne: string;
   roundTwo: string;
   roundThree: string;
+  summary: string;
 }
 const styles = {
   container:
@@ -26,6 +27,7 @@ const Testimonial = ({
   roundOne,
   roundTwo,
   roundThree,
+  summary
 }: TestimonialComponentInterface) => {
   return (
     <div className="mt-24">
@@ -47,7 +49,7 @@ const Testimonial = ({
         <div>
           <span className={styles.position}>{position}</span>
         </div>
-        <div className="h-[100px]">
+        <div className="">
           <img
             loading="lazy"
             width="120px"
@@ -58,7 +60,7 @@ const Testimonial = ({
         </div>
         <div className="pt-2 overflow-scroll">
           {/* <p className={styles.description}>{description}</p> */}
-          <Description {...{ roundOne, roundTwo, roundThree }} />
+          <Description {...{ roundOne, roundTwo, roundThree, summary }} />
         </div>
       </div>
     </div>

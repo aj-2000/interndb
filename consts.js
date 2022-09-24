@@ -8,11 +8,11 @@ export const testimonials = [
     companyLogo:
       "https://assets.algoexpert.io/spas/main/prod/g24c1fdc096-prod/dist/images/a2b3c3709ffedce2a22a.png",
     description: "",
-    roundOne:
-      "Introduction, was asked about projects, asked details about a particular Project that I explained and the tech stack. Question: Given an array of n integers and a number k, find out if we can divide it into k subarrays of equal sums. After I coded it, was asked to divide the array into subsets. Any questions you have for me?",
-    roundTwo:
-      "Introduction. Any technical challenge that you have faced. Do you know how react makes websites faster? Or efficient? What is virtual dom? How did you manage to get this cgpa? Were colleges offline or online? Question: Design a class with 2 functions, takeInput(n) and giveProduct() where takeInput can be given any number any number of times, even infinite. The other function returns the product of last k numbers. After coding, asked me to solve for any edge case I might think of. I identified it and coded for the same. He asked me what will you be doing if we had a variable k, not fixed k. Any questions you have for me?",
+    roundOne: "",
+    roundTwo: "",
     roundThree: "",
+    summary:
+      "DSA Q1: 'Given a string consisting of left and right parentheses, we are asked to balance it by performing a minimal number of delete, insert, and replace operations. 'DSA Q2: 'node a to node b ka connection time diya tha ki kis time connect hue wo aise sab nodes ka diya tha agar node a pehle se infected thi toh node b bhi ho jaegi and aise hi batana tha last yak kon konsi node infect hui.'",
   },
   {
     id: "KBM",
@@ -27,6 +27,7 @@ export const testimonials = [
     roundTwo:
       "Introduction. Any technical challenge that you have faced. Do you know how react makes websites faster? Or efficient? What is virtual dom? How did you manage to get this cgpa? Were colleges offline or online? Question: Design a class with 2 functions, takeInput(n) and giveProduct() where takeInput can be given any number any number of times, even infinite. The other function returns the product of last k numbers. After coding, asked me to solve for any edge case I might think of. I identified it and coded for the same. He asked me what will you be doing if we had a variable k, not fixed k. Any questions you have for me?",
     roundThree: "",
+    summary: "",
   },
   {
     id: "SST",
@@ -36,11 +37,11 @@ export const testimonials = [
     position: "Software Engineer Intern",
     companyLogo:
       "https://images.squarespace-cdn.com/content/v1/593970f06b8f5b550f1dbc59/1496948776295-W5T8X3EJ0UVEX3C8KIYX/Tower+U.S.+Logo_Cropped+%28P%29.png",
-    roundOne:
-      "Introduction, was asked about projects, asked details about a particular Project that I explained and the tech stack. Question: Given an array of n integers and a number k, find out if we can divide it into k subarrays of equal sums. After I coded it, was asked to divide the array into subsets. Any questions you have for me?",
-    roundTwo:
-      "Introduction. Any technical challenge that you have faced. Do you know how react makes websites faster? Or efficient? What is virtual dom? How did you manage to get this cgpa? Were colleges offline or online? Question: Design a class with 2 functions, takeInput(n) and giveProduct() where takeInput can be given any number any number of times, even infinite. The other function returns the product of last k numbers. After coding, asked me to solve for any edge case I might think of. I identified it and coded for the same. He asked me what will you be doing if we had a variable k, not fixed k. Any questions you have for me?",
+    roundOne: "",
+    roundTwo: "",
     roundThree: "",
+    summary:
+      "DSA Question 1: 'Given a no., tell the closest number which has all odd digits.' DSA Question 2: 'Given multiple sorted array lists, tell minimized range which includes all no. of all list.'",
   },
   {
     id: "NDS",
@@ -50,11 +51,11 @@ export const testimonials = [
     position: "Software Engineer Intern",
     companyLogo:
       "https://upload.wikimedia.org/wikipedia/commons/4/43/Sprinklr_Brand_Logo.png",
-    roundOne:
-      "Introduction, was asked about projects, asked details about a particular Project that I explained and the tech stack. Question: Given an array of n integers and a number k, find out if we can divide it into k subarrays of equal sums. After I coded it, was asked to divide the array into subsets. Any questions you have for me?",
-    roundTwo:
-      "Introduction. Any technical challenge that you have faced. Do you know how react makes websites faster? Or efficient? What is virtual dom? How did you manage to get this cgpa? Were colleges offline or online? Question: Design a class with 2 functions, takeInput(n) and giveProduct() where takeInput can be given any number any number of times, even infinite. The other function returns the product of last k numbers. After coding, asked me to solve for any edge case I might think of. I identified it and coded for the same. He asked me what will you be doing if we had a variable k, not fixed k. Any questions you have for me?",
-    roundThree: "",
+      roundOne: "",
+      roundTwo: "",
+      roundThree: "",
+    summary:
+      "'pehle wale me to oops ka ek code karna.'  'objects ka array banana tha fir use custom sort.' 'alag alag members se.' 'fir usi me thode variations.' 'dsa me me ques to nahi yaad array ka hi tha cp ka tha.' 'fir doosre me os ke thode ques aur lru cache code.' 'fir dsa ka hard level.' 'vo bhi yaad nahi xD array aur multiset se tha.' 'theek hi tha vo help kar rahe the kaafi.' 'atak jao kahi pe to help kardete the.'",
   },
   {
     id: "SBS",
@@ -69,6 +70,7 @@ export const testimonials = [
     roundTwo:
       "Introduction. Any technical challenge that you have faced. Do you know how react makes websites faster? Or efficient? What is virtual dom? How did you manage to get this cgpa? Were colleges offline or online? Question: Design a class with 2 functions, takeInput(n) and giveProduct() where takeInput can be given any number any number of times, even infinite. The other function returns the product of last k numbers. After coding, asked me to solve for any edge case I might think of. I identified it and coded for the same. He asked me what will you be doing if we had a variable k, not fixed k. Any questions you have for me?",
     roundThree: "",
+    summary: "",
   },
   {
     id: "SSF",
@@ -83,6 +85,7 @@ export const testimonials = [
     roundTwo:
       "Introduction. Any technical challenge that you have faced. Do you know how react makes websites faster? Or efficient? What is virtual dom? How did you manage to get this cgpa? Were colleges offline or online? Question: Design a class with 2 functions, takeInput(n) and giveProduct() where takeInput can be given any number any number of times, even infinite. The other function returns the product of last k numbers. After coding, asked me to solve for any edge case I might think of. I identified it and coded for the same. He asked me what will you be doing if we had a variable k, not fixed k. Any questions you have for me?",
     roundThree: "",
+    summary: "",
   },
   {
     id: "AKS",
@@ -97,6 +100,7 @@ export const testimonials = [
     roundTwo:
       "Introduction. Any technical challenge that you have faced. Do you know how react makes websites faster? Or efficient? What is virtual dom? How did you manage to get this cgpa? Were colleges offline or online? Question: Design a class with 2 functions, takeInput(n) and giveProduct() where takeInput can be given any number any number of times, even infinite. The other function returns the product of last k numbers. After coding, asked me to solve for any edge case I might think of. I identified it and coded for the same. He asked me what will you be doing if we had a variable k, not fixed k. Any questions you have for me?",
     roundThree: "",
+    summary: "",
   },
   {
     id: "SGV",
@@ -111,6 +115,7 @@ export const testimonials = [
     roundTwo:
       "Introduction. Any technical challenge that you have faced. Do you know how react makes websites faster? Or efficient? What is virtual dom? How did you manage to get this cgpa? Were colleges offline or online? Question: Design a class with 2 functions, takeInput(n) and giveProduct() where takeInput can be given any number any number of times, even infinite. The other function returns the product of last k numbers. After coding, asked me to solve for any edge case I might think of. I identified it and coded for the same. He asked me what will you be doing if we had a variable k, not fixed k. Any questions you have for me?",
     roundThree: "",
+    summary: "",
   },
   {
     id: "MGW",
@@ -125,6 +130,7 @@ export const testimonials = [
     roundTwo:
       "Introduction. Any technical challenge that you have faced. Do you know how react makes websites faster? Or efficient? What is virtual dom? How did you manage to get this cgpa? Were colleges offline or online? Question: Design a class with 2 functions, takeInput(n) and giveProduct() where takeInput can be given any number any number of times, even infinite. The other function returns the product of last k numbers. After coding, asked me to solve for any edge case I might think of. I identified it and coded for the same. He asked me what will you be doing if we had a variable k, not fixed k. Any questions you have for me?",
     roundThree: "",
+    summary: "",
   },
   {
     id: "MSW",
@@ -139,6 +145,7 @@ export const testimonials = [
     roundTwo:
       "Introduction. Any technical challenge that you have faced. Do you know how react makes websites faster? Or efficient? What is virtual dom? How did you manage to get this cgpa? Were colleges offline or online? Question: Design a class with 2 functions, takeInput(n) and giveProduct() where takeInput can be given any number any number of times, even infinite. The other function returns the product of last k numbers. After coding, asked me to solve for any edge case I might think of. I identified it and coded for the same. He asked me what will you be doing if we had a variable k, not fixed k. Any questions you have for me?",
     roundThree: "",
+    summary: "",
   },
   {
     id: "YGM",
@@ -153,6 +160,7 @@ export const testimonials = [
     roundTwo:
       "Introduction. Any technical challenge that you have faced. Do you know how react makes websites faster? Or efficient? What is virtual dom? How did you manage to get this cgpa? Were colleges offline or online? Question: Design a class with 2 functions, takeInput(n) and giveProduct() where takeInput can be given any number any number of times, even infinite. The other function returns the product of last k numbers. After coding, asked me to solve for any edge case I might think of. I identified it and coded for the same. He asked me what will you be doing if we had a variable k, not fixed k. Any questions you have for me?",
     roundThree: "",
+    summary: "",
   },
   {
     id: "ACM",
@@ -167,5 +175,6 @@ export const testimonials = [
     roundTwo:
       "Introduction. Any technical challenge that you have faced. Do you know how react makes websites faster? Or efficient? What is virtual dom? How did you manage to get this cgpa? Were colleges offline or online? Question: Design a class with 2 functions, takeInput(n) and giveProduct() where takeInput can be given any number any number of times, even infinite. The other function returns the product of last k numbers. After coding, asked me to solve for any edge case I might think of. I identified it and coded for the same. He asked me what will you be doing if we had a variable k, not fixed k. Any questions you have for me?",
     roundThree: "",
+    summary: "",
   },
 ];

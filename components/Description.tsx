@@ -1,15 +1,19 @@
 import React from "react";
 
-const Description = ({
-  roundOne = "",
-  roundTwo = "",
-  roundThree = "",
-}: any) => {
+const Description = ({ roundOne, roundTwo, roundThree, summary }: any) => {
   return (
     <div className="flex flex-col min-w-[300px] px-4 gap-y-4">
+      {summary !== "" && (
+        <div>
+          <span className="italic font-mono font-thin text-base">
+            SUMMARY :
+          </span>
+          <p className="text-left text-gray-500 text-sm leading-6">{summary}</p>
+        </div>
+      )}
       {roundOne !== "" && (
         <div>
-          <span className="italic font-mono font-thin text-base">Round 1:</span>
+          <span className="italic font-mono font-thin text-base">ROUND 1:</span>
           <p className="text-left text-gray-500 text-sm leading-6">
             {roundOne}
           </p>
@@ -17,7 +21,7 @@ const Description = ({
       )}
       {roundTwo !== "" && (
         <div>
-          <span className="italic font-mono font-thin text-base">Round 2:</span>
+          <span className="italic font-mono font-thin text-base">ROUND 2:</span>
           <p className="text-left text-gray-500 text-sm leading-6">
             {roundTwo}
           </p>
@@ -25,7 +29,7 @@ const Description = ({
       )}
       {roundThree !== "" && (
         <div>
-          <span className="italic font-mono font-thin text-base">Round 3:</span>
+          <span className="italic font-mono font-thin text-base">ROUND 3:</span>
           <p className="text-left text-gray-500 text-sm leading-6">
             {roundThree}
           </p>
