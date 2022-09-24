@@ -1,7 +1,6 @@
 import React from "react";
 import Description from "./Description";
 
-
 interface TestimonialComponentInterface {
   name: string;
   profileImg: string;

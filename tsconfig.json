@@ -2,12 +2,8 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@/components/*": [
-        "components/*"
-      ],
-      "@/styles/*": [
-        "styles/*"
-      ]
+      "@/components/*": ["components/*"],
+      "@/styles/*": ["styles/*"]
     },
     "target": "es5",
     "lib": [
@@ -25,8 +21,7 @@
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "jsx": "preserve",
-    "incremental": true
+    "jsx": "preserve"
   },
   "include": [
     "next-env.d.ts",
