@@ -30,7 +30,7 @@ const Testimonial = ({
   summary
 }: TestimonialComponentInterface) => {
   return (
-    <div className="mt-24">
+    <div className="mt-16">
       <div className={styles.container}>
         <div className="text-center mb-4 absolute -top-8 right-1/2 transform translate-x-1/2">
           <a href="#" className="block relative">
