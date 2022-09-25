@@ -1,6 +1,7 @@
 import React from "react";
 import Description from "./Description";
-
+import { MdOutlineFavoriteBorder } from "react-icons/md/index";
+import TypeYearInfo from "./TypeYearInfo";
 interface TestimonialComponentInterface {
   name: string;
   profileImg: string;
@@ -27,7 +28,7 @@ const Testimonial = ({
   roundOne,
   roundTwo,
   roundThree,
-  summary
+  summary,
 }: TestimonialComponentInterface) => {
   return (
     <div className="mt-16">
@@ -42,6 +43,16 @@ const Testimonial = ({
               loading="lazy"
             />
           </a>
+        </div>
+        <div className="absolute top-4 right-64 transform translate-x-1/2">
+          <div className="relative">
+            <TypeYearInfo/>
+          </div>
+        </div>
+        <div className="absolute top-4 right-10 transform translate-x-1/2">
+          <div className="relative">
+            <MdOutlineFavoriteBorder size={30}/>
+          </div>
         </div>
         <div>
           <span className={styles.name}>{name}</span>

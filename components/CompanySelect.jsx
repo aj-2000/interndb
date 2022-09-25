@@ -31,7 +31,7 @@ export default function CompanySelect() {
           <div className="py-1">
             {companies.map((company) => {
               return (
-                <Menu.Item>
+                <Menu.Item key={company}>
               {({ active }) => (
                 <a
                   href="#"

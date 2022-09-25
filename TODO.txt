@@ -3,5 +3,6 @@
 3. Information on card - year, summer/winter, linkedin profile, cs/it, stipend
 4. form button
 5. social links
+6. Favorites Interviews
 6. my initials
 
