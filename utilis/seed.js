@@ -7,6 +7,7 @@ const seedDB = async () => {
       .insert({
         author: "866a94e2-b9cf-4b54-8c8c-1271c34eece9",
         profileImgUrl: testimonial.profileImg,
+        name: testimonial.name,
         role: testimonial.position,
         companyName: "InternDB",
         companyLogoUrl: testimonial.companyLogo,
