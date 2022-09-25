@@ -4,9 +4,9 @@ import { MdOutlineFavoriteBorder } from "react-icons/md/index";
 import TypeYearInfo from "./TypeYearInfo";
 interface TestimonialComponentInterface {
   name: string;
-  profileImg: string;
+  profileImgUrl: string;
   position: string;
-  companyLogo: string;
+  companyLogoUrl: string;
   roundOne: string;
   roundTwo: string;
   roundThree: string;
@@ -22,9 +22,9 @@ const styles = {
 
 const Testimonial = ({
   name,
-  profileImg,
+  profileImgUrl,
   position,
-  companyLogo,
+  companyLogoUrl,
   roundOne,
   roundTwo,
   roundThree,
@@ -37,7 +37,7 @@ const Testimonial = ({
           <a href="#" className="block relative">
             <img
               alt="profil"
-              src={profileImg}
+              src={profileImgUrl}
               // src="https://us.123rf.com/450wm/ostill/ostill1303/ostill130300206/121727155-paris%C3%A2%E2%82%AC%E2%80%9C-october-30-one-man-dressed-and-masked-as-a-member-of-anonymous-underground-group-member-hus.jpg?ver=6"
               className="mx-auto object-cover h-16 w-16 rounded-full shadow-[0_5px_5px_rgba(0,0,0,0.4)]"
               loading="lazy"
@@ -66,7 +66,7 @@ const Testimonial = ({
             loading="lazy"
             width="120px"
             height="40px"
-            src={companyLogo}
+            src={companyLogoUrl}
             alt="Google Logo"
           />
         </div>

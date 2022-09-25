@@ -32,7 +32,7 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx"
-, "components/CompanySelect.jsx"  ],
+, "components/CompanySelect.jsx", "utilis/supabase.js"  ],
   "exclude": [
     "node_modules"
   ]
