@@ -7,7 +7,7 @@ const SearchBar = () => {
         <div className="relative">
           <input
             type="text"
-            className="h-14 w-64 md:w-96 pr-8 pl-5 rounded z-0 focus:shadow focus:outline-none"
+            className="border-0 h-14 w-64 md:w-96 pr-8 pl-5 rounded z-0 focus:shadow focus:outline-none"
             placeholder="Search Interviews ..."
           />
           <div className="absolute top-3 right-3">

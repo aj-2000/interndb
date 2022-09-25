@@ -1,6 +1,6 @@
 import Testimonial from "@/components/Testimonial";
 import { useEffect, useState } from "react";
-import { testimonials } from "../consts";
+import SignInWithGoogleButton from "../components/SignInWithGoogleButton";
 import { AiOutlineArrowLeft, AiOutlineArrowRight } from "react-icons/ai/";
 import { useAutoAnimate } from "@formkit/auto-animate/react";
 import SearchBar from "@/components/SearchBar";
@@ -16,19 +16,21 @@ import VerdictSelect from "@/components/VerdictSelect";
 import supabase from "utilis/supabase";
 import { useFilters } from "context/FiltersContext";
 import TailwindLoader from "@/components/TailwindLoader";
+import ProfileMenu from "@/components/ProfileMenu";
+
 export default function IndexPage() {
   const { filtersState, handleFilters } = useFilters();
   const [testimonialParent] = useAutoAnimate();
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState("");
   const [interviews, setInterviews] = useState([]);
+  const user = supabase.auth.user();
   const fetchInterviews = () => {
     setIsLoading(true);
     supabase
       .from("interviews")
       .select()
       .then(({ data, error }) => {
-        console.log(data);
         if (!error) {
           if (filtersState.filterByDifficulty !== "") {
             data = data?.filter(
@@ -74,7 +76,6 @@ export default function IndexPage() {
             );
           }
           setInterviews(data);
-          console.log(data);
           setIsLoading(false);
         } else {
           setError(error.message);
@@ -95,7 +96,7 @@ export default function IndexPage() {
     }
   };
   const handleRight = () => {
-    if (index === testimonials.length - 1) {
+    if (index === interviews?.length - 1) {
       return;
     } else {
       setIndex(index + 1);
@@ -104,6 +105,7 @@ export default function IndexPage() {
 
   return (
     <div className="flex flex-col justify-between bg-gray-100 min-h-[100vh]">
+      {user?.id && <ProfileMenu/>}
       <div className="flex items-center justify-around py-4">
         <div className="flex flex-col py-4">
           <span className="font-mono font-thin text-lg bg-gradient-to-bl">
@@ -113,7 +115,10 @@ export default function IndexPage() {
             MADE with ❤️
           </span>
         </div>
-        <SearchBar />
+        <div className="flex justify-between items-center gap-x-2">
+          <SearchBar />
+          <div>{!user?.id && <SignInWithGoogleButton />}</div>
+        </div>
       </div>
       <div className="grid grid-cols-3 md:grid-cols-5 gap-y-2 gap-x-4 justify-end px-4">
         <VerdictSelect />
@@ -125,51 +130,61 @@ export default function IndexPage() {
         <BranchSelect />
         <YearSelect />
         <CompanySelect />
-        <button 
-          onClick={() => handleFilters({
-            filterByMode: "",
-            filterByDifficulty: "",
-            filterByExperience: "",
-            filterByProgram: "",
-            filterByInternType: "",
-            filterByBranch: "",
-            filterByYear: "",
-            filterByCompany: "",
-            filterByVerdict: "",
-          })}
+        <button
+          onClick={() =>
+            handleFilters({
+              filterByMode: "",
+              filterByDifficulty: "",
+              filterByExperience: "",
+              filterByProgram: "",
+              filterByInternType: "",
+              filterByBranch: "",
+              filterByYear: "",
+              filterByCompany: "",
+              filterByVerdict: "",
+            })
+          }
           className="hidden  md:block rounded-lg px-4 py-2 bg-gray-600 text-gray-100 hover:bg-gray-700 duration-300"
         >
           Reset Filters
         </button>
       </div>
       <div className="md:hidden pt-2 px-4">
-      <button 
-          onClick={() => handleFilters({
-            filterByMode: "",
-            filterByDifficulty: "",
-            filterByExperience: "",
-            filterByProgram: "",
-            filterByInternType: "",
-            filterByBranch: "",
-            filterByYear: "",
-            filterByCompany: "",
-            filterByVerdict: "",
-          })}
+        <button
+          onClick={() =>
+            handleFilters({
+              filterByMode: "",
+              filterByDifficulty: "",
+              filterByExperience: "",
+              filterByProgram: "",
+              filterByInternType: "",
+              filterByBranch: "",
+              filterByYear: "",
+              filterByCompany: "",
+              filterByVerdict: "",
+            })
+          }
           className="w-full rounded-lg px-4 py-2 bg-gray-600 text-gray-100 hover:bg-gray-700 duration-300"
         >
           Reset Filters
         </button>
       </div>
       <div>
-        {isLoading && <div className="flex justify-center align-center my-auto"><TailwindLoader/></div>}
-        {!isLoading && <div
-          className="flex gap-x-8 pl-4 md:px-32 overflow-hidden"
-          ref={testimonialParent}
-        >
-          {interviews.slice(index).map((interview) => {
-            return <Testimonial key={interview.id} {...interview} />;
-          })}
-        </div>}
+        {isLoading && (
+          <div className="flex justify-center align-center my-auto">
+            <TailwindLoader />
+          </div>
+        )}
+        {!isLoading && (
+          <div
+            className="flex gap-x-8 pl-4 md:px-32 overflow-hidden"
+            ref={testimonialParent}
+          >
+            {interviews.slice(index).map((interview) => {
+              return <Testimonial key={interview.id} {...interview} />;
+            })}
+          </div>
+        )}
         <div className="text-xl flex py-8 gap-x-16 justify-center">
           <div
             className={`bg-white text-3xl rounded-full shadow-lg p-2 ${
@@ -182,7 +197,7 @@ export default function IndexPage() {
           </div>
           <div
             className={`bg-white text-3xl rounded-full shadow-lg p-2 ${
-              index == testimonials.length - 1
+              index == interviews?.length - 1
                 ? "cursor-not-allowed text-gray-400"
                 : "hover:shadow-xl hover:scale-150 hover:cursor-pointer text-indigo-500"
             }`}
