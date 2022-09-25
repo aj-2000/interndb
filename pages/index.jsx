@@ -105,7 +105,7 @@ export default function IndexPage() {
 
   return (
     <div className="flex flex-col justify-between bg-gray-100 min-h-[100vh]">
-      {user?.id && <ProfileMenu/>}
+      {user?.id && <ProfileMenu />}
       <div className="flex items-center justify-around py-4">
         <div className="flex flex-col py-4">
           <span className="font-mono font-thin text-lg bg-gradient-to-bl">
@@ -117,8 +117,9 @@ export default function IndexPage() {
         </div>
         <div className="flex justify-between items-center gap-x-2">
           <SearchBar />
-          <div>{!user?.id && <SignInWithGoogleButton />}</div>
         </div>
+
+        <div className="">{!user?.id && <SignInWithGoogleButton />}</div>
       </div>
       <div className="grid grid-cols-3 md:grid-cols-5 gap-y-2 gap-x-4 justify-end px-4">
         <VerdictSelect />
@@ -175,16 +176,18 @@ export default function IndexPage() {
             <TailwindLoader />
           </div>
         )}
-        {!isLoading && (
-          <div
-            className="flex gap-x-8 pl-4 md:px-32 overflow-hidden"
-            ref={testimonialParent}
-          >
-            {interviews.slice(index).map((interview) => {
-              return <Testimonial key={interview.id} {...interview} />;
-            })}
-          </div>
-        )}
+
+        <div
+          className={`flex gap-x-8 pl-4 md:px-32 overflow-hidden ${
+            isLoading && "hidden"
+          }`}
+          ref={testimonialParent}
+        >
+          {interviews.slice(index).map((interview) => {
+            return <Testimonial key={interview.id} {...interview} />;
+          })}
+        </div>
+
         <div className="text-xl flex py-8 gap-x-16 justify-center">
           <div
             className={`bg-white text-3xl rounded-full shadow-lg p-2 ${
