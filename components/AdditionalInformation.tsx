@@ -6,6 +6,7 @@ const AdditionalInformation = () => {
         <div>
             <p className='text-sm font-extralight'>STIPEND: <span className='font-normal text-xs'>₹1,25,000 /-</span></p>
             <p className='text-sm font-extralight'>LOCATION: <span className='font-normal text-xs'>Bangalore, Hyderbad, Noida</span></p>
+            <p className='text-sm font-extralight'>NUMBER OF ROUNDS: <span className='font-normal text-xs'>2</span></p>
         </div>
     </div>
   )
