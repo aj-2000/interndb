@@ -2,18 +2,18 @@
 import { Fragment } from "react";
 import { Menu, Transition } from "@headlessui/react";
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
-import { companies } from "consts";
-
+import { useFilters } from "context/FiltersContext";
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
 export default function DifficultySelect() {
+  const { filtersState, handleFilters } = useFilters();
   return (
     <Menu as="div" className="relative inline-block text-left">
       <div>
         <Menu.Button className="inline-flex w-full justify-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-100">
-          Difficulty
+          {filtersState.filterByDifficulty || 'Difficulty'}
           <ChevronDownIcon className="-mr-1 ml-2 h-5 w-5" aria-hidden="true" />
         </Menu.Button>
       </div>
@@ -31,41 +31,45 @@ export default function DifficultySelect() {
           <div className="py-1">
             <Menu.Item>
               {({ active }) => (
-                <a
-                  href="#"
+                <div
+                  onClick={() => handleFilters({ filterByDifficulty: "Easy" })}
                   className={classNames(
                     active ? "bg-gray-100 text-gray-900" : "text-gray-700",
                     "block px-4 py-2 text-sm"
                   )}
                 >
                   Easy
-                </a>
+                </div>
               )}
             </Menu.Item>
             <Menu.Item>
               {({ active }) => (
-                <a
-                  href="#"
+                <div
+                  onClick={() =>
+                    handleFilters({ filterByDifficulty: "Medium" })
+                  }
                   className={classNames(
                     active ? "bg-gray-100 text-gray-900" : "text-gray-700",
                     "block px-4 py-2 text-sm"
                   )}
                 >
                   Medium
-                </a>
+                </div>
               )}
             </Menu.Item>
             <Menu.Item>
               {({ active }) => (
-                <a
-                  href="#"
+                <div
+                  onClick={() =>
+                    handleFilters({ filterByDifficulty: "Difficult" })
+                  }
                   className={classNames(
                     active ? "bg-gray-100 text-gray-900" : "text-gray-700",
                     "block px-4 py-2 text-sm"
                   )}
                 >
                   Hard
-                </a>
+                </div>
               )}
             </Menu.Item>
             {/* <form method="POST" action="#">
