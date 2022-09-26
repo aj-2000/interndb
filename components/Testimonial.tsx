@@ -1,15 +1,20 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Description from "./Description";
-import { MdOutlineFavoriteBorder } from "react-icons/md/index";
+import {
+  MdOutlineFavoriteBorder,
+  MdOutlineFavorite,
+} from "react-icons/md/index";
 import TypeYearInfo from "./TypeYearInfo";
+import supabase from "utilis/supabase";
 interface TestimonialComponentInterface {
+  id: string;
   name: string;
   profileImgUrl: string;
   position: string;
   companyLogoUrl: string;
-  roundOne: string;
-  roundTwo: string;
-  roundThree: string;
+  roundone: string;
+  roundtwo: string;
+  roundthree: string;
   summary: string;
 }
 const styles = {
@@ -21,15 +26,53 @@ const styles = {
 };
 
 const Testimonial = ({
+  id,
   name,
   profileImgUrl,
   position,
   companyLogoUrl,
-  roundOne,
-  roundTwo,
-  roundThree,
+  roundone,
+  roundtwo,
+  roundthree,
   summary,
 }: TestimonialComponentInterface) => {
+  const [isFavorite, setIsFavorite] = useState<boolean>(false);
+  const [favorites, setFavorites] = useState<any>([]);
+  const user = supabase.auth.user();
+  useEffect(() => {
+    if (user) {
+      supabase
+        .from("users")
+        .select("favorites")
+        .eq("id", user?.id)
+        .then(({ data, error }) => {
+          setFavorites(data?.at(0).favorites);
+          if (!error) {
+            setIsFavorite(data?.at(0).favorites?.indexOf(id) > -1);
+          } else {
+            console.log(error);
+          }
+        });
+    }
+  }, [user]);
+  const toggleFavorite = () => {
+    if (isFavorite) {
+      favorites.delete[favorites?.indexOf(id)];
+    } else {
+      favorites.push(id);
+    }
+    supabase
+      .from("users")
+      .update({ favorites: favorites })
+      .eq("id", user?.id)
+      .then((error) => {
+        if (error) {
+          console.log(error);
+        } else {
+          setIsFavorite(!isFavorite);
+        }
+      });
+  };
   return (
     <div className="mt-16">
       <div className={styles.container}>
@@ -46,12 +89,16 @@ const Testimonial = ({
         </div>
         <div className="absolute top-4 right-64 transform translate-x-1/2">
           <div className="relative">
-            <TypeYearInfo/>
+            <TypeYearInfo />
           </div>
         </div>
-        <div className="absolute top-4 right-10 transform translate-x-1/2">
-          <div className="relative">
-            <MdOutlineFavoriteBorder size={30}/>
+        <div className="cursor-pointer absolute top-4 right-10 transform translate-x-1/2">
+          <div onClick={toggleFavorite} className="text-pink-600 relative">
+            {!isFavorite ? (
+              <MdOutlineFavoriteBorder size={30} />
+            ) : (
+              <MdOutlineFavorite size={30} />
+            )}
           </div>
         </div>
         <div>
@@ -72,7 +119,7 @@ const Testimonial = ({
         </div>
         <div className="pt-2 overflow-scroll">
           {/* <p className={styles.description}>{description}</p> */}
-          <Description {...{ roundOne, roundTwo, roundThree, summary }} />
+          <Description {...{ roundone, roundtwo, roundthree, summary }} />
         </div>
       </div>
     </div>

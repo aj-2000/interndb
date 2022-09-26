@@ -17,75 +17,114 @@ import supabase from "utilis/supabase";
 import { useFilters } from "context/FiltersContext";
 import TailwindLoader from "@/components/TailwindLoader";
 import ProfileMenu from "@/components/ProfileMenu";
+import useSearchString, { useSearch } from "context/SearchContext";
+import useFavorites from "context/FavoritesContext";
 
 export default function IndexPage() {
+  const { searchState, handleSearch } = useSearchString();
   const { filtersState, handleFilters } = useFilters();
   const [testimonialParent] = useAutoAnimate();
+  const [favorites, setFavorites] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState("");
   const [interviews, setInterviews] = useState([]);
   const user = supabase.auth.user();
   const fetchInterviews = () => {
     setIsLoading(true);
-    supabase
-      .from("interviews")
-      .select()
-      .then(({ data, error }) => {
-        if (!error) {
-          if (filtersState.filterByDifficulty !== "") {
-            data = data?.filter(
-              (interview) =>
-                interview.difficulty === filtersState.filterByDifficulty
-            );
+    if (searchState.searchString !== "" && searchState.searchString) {
+      supabase
+        .from("interviews")
+        .select()
+        .textSearch("fts", `${searchState.searchString}`)
+        .then(({ error, data }) => {
+          if (error) {
+            console.log(error);
+            setIsLoading(false);
+          } else {
+            setInterviews(data);
+            setIsLoading(false);
           }
-          if (filtersState.filterByExperience !== "") {
-            data = data?.filter(
-              (interview) =>
-                interview.experience === filtersState.filterByExperience
-            );
+        });
+    }
+    if (searchState.searchString === "") {
+      supabase
+        .from("interviews")
+        .select()
+        .then(({ data, error }) => {
+          if (!error) {
+            // if (false) {
+            //   supabase
+            //     .from("users")
+            //     .select("favorites")
+            //     .eq("id", user?.id)
+            //     .then(({ data, error }) => {
+            //       if (!error) setFavorites(data?.at(0).favorites);
+            //       else console.log(error);
+            //     })
+            //     .then(
+            //       (data = data?.filter(
+            //         (interview) => favorites?.indexOf(interview.id) > -1
+            //       ))
+            //     );
+            // }
+            if (filtersState.filterByDifficulty !== "") {
+              data = data?.filter(
+                (interview) =>
+                  interview.difficulty === filtersState.filterByDifficulty
+              );
+            }
+            if (filtersState.filterByExperience !== "") {
+              data = data?.filter(
+                (interview) =>
+                  interview.experience === filtersState.filterByExperience
+              );
+            }
+            if (filtersState.filterByCompany !== "") {
+              data = data?.filter(
+                (interview) =>
+                  interview.company === filtersState.filterByCompany
+              );
+            }
+            if (filtersState.filterByProgram !== "") {
+              data = data?.filter(
+                (interview) =>
+                  interview.program === filtersState.filterByProgram
+              );
+            }
+            if (filtersState.filterByInternType !== "") {
+              data = data?.filter(
+                (interview) =>
+                  interview.interType === filtersState.filterByInternType
+              );
+            }
+            if (filtersState.filterByBranch !== "") {
+              data = data?.filter(
+                (interview) => interview.branch === filtersState.filterByBranch
+              );
+            }
+            if (filtersState.filterByYear !== "") {
+              data = data?.filter(
+                (interview) => interview.year === filtersState.filterByYear
+              );
+            }
+            if (filtersState.filterByMode !== "") {
+              data = data?.filter(
+                (interview) => interview.mode === filtersState.filterByMode
+              );
+            }
+            setInterviews(data);
+            setIsLoading(false);
+          } else {
+            setError(error.message);
+            setIsLoading(false);
           }
-          if (filtersState.filterByCompany !== "") {
-            data = data?.filter(
-              (interview) => interview.company === filtersState.filterByCompany
-            );
-          }
-          if (filtersState.filterByProgram !== "") {
-            data = data?.filter(
-              (interview) => interview.program === filtersState.filterByProgram
-            );
-          }
-          if (filtersState.filterByInternType !== "") {
-            data = data?.filter(
-              (interview) =>
-                interview.interType === filtersState.filterByInternType
-            );
-          }
-          if (filtersState.filterByBranch !== "") {
-            data = data?.filter(
-              (interview) => interview.branch === filtersState.filterByBranch
-            );
-          }
-          if (filtersState.filterByYear !== "") {
-            data = data?.filter(
-              (interview) => interview.year === filtersState.filterByYear
-            );
-          }
-          if (filtersState.filterByMode !== "") {
-            data = data?.filter(
-              (interview) => interview.mode === filtersState.filterByMode
-            );
-          }
-          setInterviews(data);
-          setIsLoading(false);
-        } else {
-          setError(error.message);
-          setIsLoading(false);
-        }
-      });
+        });
+    }
   };
+
   useEffect(() => {
     fetchInterviews();
-  }, [filtersState]);
+  }, [filtersState, searchState]);
 
   const [index, setIndex] = useState(0);
   const handleLeft = () => {
@@ -102,9 +141,10 @@ export default function IndexPage() {
       setIndex(index + 1);
     }
   };
-
+const {favoritesState, handleFavorites} = useFavorites()
   return (
     <div className="flex flex-col justify-between bg-gray-100 min-h-[100vh]">
+      {favoritesState.onlyFavorites}
       {user?.id && <ProfileMenu />}
       <div className="flex items-center justify-around py-4">
         <div className="flex flex-col py-4">
@@ -119,7 +159,10 @@ export default function IndexPage() {
           <SearchBar />
         </div>
 
-        <div className="">{!user?.id && <SignInWithGoogleButton />}</div>
+        <div className={`${user?.id && "hidden"}`}>
+          {" "}
+          <SignInWithGoogleButton />
+        </div>
       </div>
       <div className="grid grid-cols-3 md:grid-cols-5 gap-y-2 gap-x-4 justify-end px-4">
         <VerdictSelect />
@@ -184,7 +227,9 @@ export default function IndexPage() {
           ref={testimonialParent}
         >
           {interviews.slice(index).map((interview) => {
-            return <Testimonial key={interview.id} {...interview} />;
+            if (interview) {
+              return <Testimonial key={interview?.id} {...interview} />;
+            }
           })}
         </div>
 
