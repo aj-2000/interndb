@@ -29,6 +29,23 @@ export default function IndexPage() {
   const [error, setError] = useState("");
   const [interviews, setInterviews] = useState([]);
   const user = supabase.auth.user();
+  const fetchFavorites = () => {
+    supabase
+      .from("users")
+      .select("favorites")
+      .eq("id", user?.id)
+      .then(({ data, error }) => {
+        if (!error) {
+          console.log(data);
+          handleFavorites({ userFavorites: data?.at(0).favorites });
+        } else {
+          console.log(error);
+        }
+      });
+  };
+  useEffect(() => {
+    fetchFavorites();
+  }, [user?.id]);
   const fetchInterviews = () => {
     setIsLoading(true);
     if (searchState.searchString !== "" && searchState.searchString) {
@@ -52,21 +69,12 @@ export default function IndexPage() {
         .select()
         .then(({ data, error }) => {
           if (!error) {
-            // if (false) {
-            //   supabase
-            //     .from("users")
-            //     .select("favorites")
-            //     .eq("id", user?.id)
-            //     .then(({ data, error }) => {
-            //       if (!error) setFavorites(data?.at(0).favorites);
-            //       else console.log(error);
-            //     })
-            //     .then(
-            //       (data = data?.filter(
-            //         (interview) => favorites?.indexOf(interview.id) > -1
-            //       ))
-            //     );
-            // }
+            if (favoritesState.onlyFavorites) {
+              data = data?.filter(
+                (interview) =>
+                  favoritesState.userFavorites?.indexOf(interview.id) > -1
+              );
+            }
             if (filtersState.filterByDifficulty !== "") {
               data = data?.filter(
                 (interview) =>
@@ -124,6 +132,7 @@ export default function IndexPage() {
 
   useEffect(() => {
     fetchInterviews();
+    console.log("useEffect called");
   }, [filtersState, searchState]);
 
   const [index, setIndex] = useState(0);
@@ -141,10 +150,9 @@ export default function IndexPage() {
       setIndex(index + 1);
     }
   };
-const {favoritesState, handleFavorites} = useFavorites()
+  const { favoritesState, handleFavorites } = useFavorites();
   return (
     <div className="flex flex-col justify-between bg-gray-100 min-h-[100vh]">
-      {favoritesState.onlyFavorites}
       {user?.id && <ProfileMenu />}
       <div className="flex items-center justify-around py-4">
         <div className="flex flex-col py-4">
@@ -227,7 +235,11 @@ const {favoritesState, handleFavorites} = useFavorites()
           ref={testimonialParent}
         >
           {interviews.slice(index).map((interview) => {
-            if (interview) {
+            if (favoritesState.onlyFavorites) {
+              if (favoritesState.userFavorites?.indexOf(interview.id) > -1) {
+                return <Testimonial key={interview?.id} {...interview} />;
+              }
+            } else {
               return <Testimonial key={interview?.id} {...interview} />;
             }
           })}

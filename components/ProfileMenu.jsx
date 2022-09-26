@@ -3,10 +3,12 @@ import supabase from "../utilis/supabase";
 import { MdFavorite } from "react-icons/md";
 import { FiLogOut } from "react-icons/fi";
 import { useRouter } from "next/router";
+import useFavorites from "context/FavoritesContext";
 
 const ProfileMenu = () => {
   const router = useRouter();
   const [user, setUser] = useState(null);
+  const { favoritesState, handleFavorites } = useFavorites();
   useEffect(() => {
     const session = supabase.auth.session();
     setUser(session?.user);
@@ -22,6 +24,7 @@ const ProfileMenu = () => {
   };
   return (
     <div className="flex rounded justify-between px-2 md:px-4 bg-white">
+      {favoritesState.onlyFavorites}
       <div className="flex py-2 rounded-lg gap-x-2">
         <img
           className="rounded-full min-w-[40px] max-w-[40px] h-[40px]"
@@ -35,9 +38,17 @@ const ProfileMenu = () => {
         </div>
       </div>
       <div className="flex justify-center items-center gap-x-4 hover:cursor-pointer">
-        <div className="flex justify-center gap-x-2 items-center py-2 px-4 shadow rounded-2xl">
-          <MdFavorite className="text-pink-600" size={28} />
-          <span className="text-sm uppercase font-semibold">Favorites</span>
+        <div
+          onClick={() => {
+            handleFavorites({ onlyFavorites: !favoritesState.onlyFavorites });
+            console.log(favoritesState)
+          }}
+          className="flex justify-center gap-x-2 items-center py-2 px-4 shadow rounded-2xl"
+        >
+          {!favoritesState.onlyFavorites && <MdFavorite className="text-pink-600" size={28} />}
+          <span className="text-sm uppercase font-semibold">
+            {favoritesState.onlyFavorites ? "All Interviews" : 'Favorites'}
+          </span>
         </div>
         <div
           onClick={logout}
